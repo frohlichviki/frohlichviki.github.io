@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="split" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6f7dff"/>
+      <stop offset="50%" stop-color="#6f7dff"/>
+      <stop offset="50%" stop-color="#e07a45"/>
+      <stop offset="100%" stop-color="#e07a45"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0a0a0f"/>
+  <!-- four-point sparkle star, centered -->
+  <path d="M32 10
+           C33.5 22, 42 30.5, 54 32
+           C42 33.5, 33.5 42, 32 54
+           C30.5 42, 22 33.5, 10 32
+           C22 30.5, 30.5 22, 32 10 Z"
+        fill="url(#split)"/>
+  <!-- small bright center -->
+  <circle cx="32" cy="32" r="3" fill="#ffffff" opacity="0.9"/>
+</svg>

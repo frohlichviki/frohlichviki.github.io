@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 550" width="100%" role="img" aria-label="Stylised page of writing">
+  <defs>
+    <radialGradient id="ga-glow" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#6f7dff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#6f7dff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="880" height="550" fill="#0a0c1f"/>
+  <rect width="880" height="550" fill="url(#ga-glow)"/>
+  <!-- page -->
+  <rect x="312" y="120" width="256" height="320" rx="10" fill="#14141d" stroke="#6f7dff" stroke-opacity="0.55" stroke-width="2.5"/>
+  <!-- text lines, fading down -->
+  <g stroke="#b9a7ff" stroke-linecap="round">
+    <line x1="346" y1="172" x2="534" y2="172" stroke-width="7" stroke-opacity="0.9"/>
+    <line x1="346" y1="208" x2="534" y2="208" stroke-width="5" stroke-opacity="0.7"/>
+    <line x1="346" y1="240" x2="500" y2="240" stroke-width="5" stroke-opacity="0.6"/>
+    <line x1="346" y1="272" x2="534" y2="272" stroke-width="5" stroke-opacity="0.5"/>
+    <line x1="346" y1="304" x2="488" y2="304" stroke-width="5" stroke-opacity="0.4"/>
+    <line x1="346" y1="336" x2="520" y2="336" stroke-width="5" stroke-opacity="0.3"/>
+    <line x1="346" y1="368" x2="470" y2="368" stroke-width="5" stroke-opacity="0.2"/>
+  </g>
+  <!-- a few rising "stars" off the page, words becoming sky -->
+  <circle cx="560" cy="150" r="3" fill="#ffffff" opacity="0.9"/>
+  <circle cx="600" cy="110" r="2.2" fill="#b9a7ff" opacity="0.8"/>
+  <circle cx="582" cy="200" r="2" fill="#ffffff" opacity="0.6"/>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 550" width="100%" role="img" aria-label="A crescent moon sketch in an eyepiece circle">
+  <defs>
+    <radialGradient id="gs-glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#6f7dff" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#6f7dff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="gs-eyepiece"><circle cx="440" cy="275" r="150"/></clipPath>
+  </defs>
+  <rect width="880" height="550" fill="#0a0c1f"/>
+  <rect width="880" height="550" fill="url(#gs-glow)"/>
+  <!-- eyepiece field of view -->
+  <circle cx="440" cy="275" r="150" fill="#14141d" stroke="#6f7dff" stroke-opacity="0.5" stroke-width="2.5"/>
+  <g clip-path="url(#gs-eyepiece)">
+    <!-- crescent moon: lit disk minus offset shadow disk -->
+    <circle cx="440" cy="275" r="92" fill="#cdd6ff"/>
+    <circle cx="404" cy="258" r="88" fill="#14141d"/>
+    <!-- a couple of sketched craters on the lit limb -->
+    <circle cx="496" cy="300" r="9" fill="none" stroke="#8a93c8" stroke-width="2" opacity="0.6"/>
+    <circle cx="486" cy="240" r="6" fill="none" stroke="#8a93c8" stroke-width="2" opacity="0.5"/>
+  </g>
+  <!-- crosshair ticks, like an observing sketch -->
+  <g stroke="#6f7dff" stroke-opacity="0.4" stroke-width="2">
+    <line x1="440" y1="110" x2="440" y2="132"/>
+    <line x1="440" y1="418" x2="440" y2="440"/>
+    <line x1="275" y1="275" x2="297" y2="275"/>
+    <line x1="583" y1="275" x2="605" y2="275"/>
+  </g>
+</svg>

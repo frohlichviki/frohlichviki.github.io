@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Viktória Fröhlich</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<!-- Open Graph / social share. Replace SITE_URL with your real domain (e.g. https://frohlichviktoria.com) for previews to show the image. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — Viktória Fröhlich">
+<meta property="og:description" content="Invite a talk, arrange an outreach event, buy a print, or start a research collaboration.">
+<meta property="og:image" content="images/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact — Viktória Fröhlich">
+<meta name="twitter:description" content="Invite a talk, arrange an outreach event, buy a print, or start a research collaboration.">
+<meta name="twitter:image" content="images/share.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="contact">
+<div class="field"></div><div class="grain"></div>
+<nav>
+  <a class="brand" href="index.html">Viktória Fröhlich</a>
+  <div class="links">
+    <a href="science.html">Science</a>
+    <a href="art.html">Art</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+</nav>
+
+<header class="hero wrap">
+  <div class="eyebrow fade">Contact</div>
+  <h1 class="fade d1">Let's make something happen.</h1>
+  <p class="fade d2 lead" style="margin-bottom: 2rem;">Whether it's an invited talk, an outreach event, a print you'd like to own, or a research collaboration — tell me a little, and I'll get back to you.</p>
+</header>
+
+<section class="wrap">
+  <div class="cgrid">
+    <form class="inq fade d2" id="inq"
+          action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label>
+        <span class="lab">Your name</span>
+        <input type="text" name="name" required autocomplete="name">
+      </label>
+      <label>
+        <span class="lab">Email</span>
+        <input type="email" name="email" required autocomplete="email">
+      </label>
+      <label>
+        <span class="lab">What's this about?</span>
+        <select name="topic" required>
+          <option value="" disabled selected>Choose one…</option>
+          <option>Invited talk / lecture</option>
+          <option>Outreach event</option>
+          <option>Buy a print</option>
+          <option>Research / collaboration</option>
+        </select>
+      </label>
+      <label>
+        <span class="lab">Message</span>
+        <textarea name="message" required placeholder="A few details — date, place, which print, or what you have in mind."></textarea>
+      </label>
+      <input type="hidden" name="_subject" value="New inquiry from your website">
+      <button class="send" type="submit">Send inquiry</button>
+      <p class="form-note" style="margin-bottom: 2rem;">Replies usually within a few days. Or just email me directly →</p>
+      <div class="form-msg" id="formMsg"></div>
+    </form>
+
+    <aside class="clinks fade d3">
+      <a class="clink" href="mailto:frohlichviki@gmail.com">
+        <span class="k">Email</span><span class="v">frohlichviki@gmail.com</span></a>
+      <a class="clink" href="https://orcid.org/0000-0003-3780-7185" target="_blank" rel="noopener">
+        <span class="k">ORCID</span><span class="v">Research profile</span></a>
+      <a class="clink" href="https://ui.adsabs.harvard.edu/user/libraries/eOEOgOb0QfiV0zlFnTccLg" target="_blank" rel="noopener">
+        <span class="k">ADS</span><span class="v">Publication library</span></a>
+      <a class="clink" href="https://www.instagram.com/viki_v8/" target="_blank" rel="noopener">
+        <span class="k">Instagram</span><span class="v">Photographs &amp; art</span></a>
+      <a class="clink" href="https://www.linkedin.com/in/vikt%C3%B3ria-fr%C3%B6hlich-b48035374/" target="_blank" rel="noopener">
+        <span class="k">LinkedIn</span><span class="v">Professional</span></a>
+    </aside>
+  </div>
+
+  <p class="mono" style="margin-top:2rem;font-size:.8rem;color:var(--text-dim);max-width:62ch">
+    → To make the form actually deliver: create a free form at formspree.io, and replace
+    <code>YOUR_FORM_ID</code> in the form's <code>action</code> with the ID it gives you.
+    Until then the form will look right but won't send. 
+  </p>
+</section>
+
+<footer>
+  <span>© 2026 Viktória Fröhlich</span>
+  <span><a href="mailto:frohlichviki@gmail.com">frohlichviki@gmail.com</a></span>
+  <span><a href="index.html">← Home</a></span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 550" width="100%" role="img" aria-label="A loudspeaker emitting sound waves">
+  <defs>
+    <radialGradient id="gt-glow" cx="42%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#6f7dff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#6f7dff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="880" height="550" fill="#0a0c1f"/>
+  <rect width="880" height="550" fill="url(#gt-glow)"/>
+
+  <!-- speaker: square front + trapezoid cone, like the emoji -->
+  <g fill="#b9a7ff" stroke="#6f7dff" stroke-width="2.5" stroke-linejoin="round">
+    <!-- back square -->
+    <rect x="300" y="238" width="74" height="74" rx="8"/>
+    <!-- cone flaring out to the right -->
+    <path d="M 360 250 L 432 196 L 432 354 L 360 300 Z"/>
+  </g>
+
+  <!-- sound waves radiating right -->
+  <g fill="none" stroke="#6f7dff" stroke-linecap="round">
+    <path d="M 470 232 A 60 60 0 0 1 470 318" stroke-width="8" stroke-opacity="0.9"/>
+    <path d="M 510 206 A 100 100 0 0 1 510 344" stroke-width="7" stroke-opacity="0.6"/>
+    <path d="M 550 182 A 140 140 0 0 1 550 368" stroke-width="6" stroke-opacity="0.38"/>
+    <path d="M 590 160 A 180 180 0 0 1 590 390" stroke-width="6" stroke-opacity="0.20"/>
+  </g>
+</svg>
