@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function(){
     document.querySelectorAll('.filter-note').forEach(function(n){
       n.classList.toggle('show', n.dataset.note === f);
     });
+    // expose active filter on the gallery so CSS can adjust layout per tab
+    var gal = document.querySelector('.gallery');
+    if(gal){ gal.setAttribute('data-active', f); }
   }
   subBtns.forEach(function(b){
     b.addEventListener('click', function(){ applyFilter(b.dataset.f); });

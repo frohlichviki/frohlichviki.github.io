@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 550" width="100%" role="img" aria-label="RAMSES mission placeholder icon">
+  <defs>
+    <radialGradient id="rm-glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#6f7dff" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#6f7dff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rm-rock" cx="40%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#3a3a52"/>
+      <stop offset="70%" stop-color="#23232f"/>
+      <stop offset="100%" stop-color="#15151d"/>
+    </radialGradient>
+  </defs>
+  <rect width="880" height="550" fill="#0a0c1f"/>
+  <rect width="880" height="550" fill="url(#rm-glow)"/>
+  <!-- asteroid (Apophis-like) -->
+  <path d="M300 200 Q360 160 430 190 Q500 210 500 290 Q510 360 440 380 Q370 405 320 360 Q270 320 275 260 Q280 220 300 200 Z" fill="url(#rm-rock)" stroke="#4a4a66" stroke-width="2"/>
+  <circle cx="360" cy="250" r="14" fill="#1a1a24" opacity="0.8"/>
+  <circle cx="420" cy="310" r="10" fill="#1a1a24" opacity="0.7"/>
+  <circle cx="330" cy="320" r="8" fill="#1a1a24" opacity="0.6"/>
+  <!-- spacecraft: small body + two solar panels -->
+  <g transform="translate(600 250)">
+    <rect x="-14" y="-16" width="28" height="32" rx="4" fill="#b9a7ff"/>
+    <rect x="-70" y="-10" width="46" height="20" rx="2" fill="#6f7dff" opacity="0.85"/>
+    <rect x="24" y="-10" width="46" height="20" rx="2" fill="#6f7dff" opacity="0.85"/>
+    <line x1="-24" y1="0" x2="-14" y2="0" stroke="#8a93c8" stroke-width="2"/>
+    <line x1="14" y1="0" x2="24" y2="0" stroke="#8a93c8" stroke-width="2"/>
+    <!-- signal toward asteroid -->
+    <path d="M-20 -20 Q-80 -60 -150 -20" fill="none" stroke="#6f7dff" stroke-width="2" stroke-dasharray="4 6" opacity="0.5"/>
+  </g>
+  <!-- a few stars -->
+  <circle cx="180" cy="120" r="2.5" fill="#fff" opacity="0.8"/>
+  <circle cx="700" cy="150" r="2" fill="#b9a7ff" opacity="0.7"/>
+  <circle cx="620" cy="430" r="2.5" fill="#fff" opacity="0.6"/>
+  <circle cx="200" cy="440" r="2" fill="#fff" opacity="0.5"/>
+</svg>

@@ -151,8 +151,9 @@ h1 em{font-style:italic;font-weight:400}
 .filter-note a:hover{text-decoration:underline}
 
 .gallery{columns:3;column-gap:1rem}
-@media(max-width:900px){.gallery{columns:2}}
-@media(max-width:560px){.gallery{columns:1}}
+.gallery[data-active="travel"]{columns:4}
+@media(max-width:900px){.gallery{columns:2}.gallery[data-active="travel"]{columns:3}}
+@media(max-width:560px){.gallery{columns:1}.gallery[data-active="travel"]{columns:2}}
 .shot{break-inside:avoid;margin-bottom:1rem;border:1px solid var(--hair);border-radius:var(--r);
   overflow:hidden;background:var(--surface);cursor:pointer;position:relative;
   content-visibility:auto;contain-intrinsic-size:auto 320px;
@@ -339,6 +340,22 @@ footer a:hover{color:var(--text)}
 
 /* research themes band */
 .themes{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-bottom:2.6rem}
+/* wide feature tile (RAMSES) — image (1 col) + text (2 cols), equal height, own classes to avoid .theme conflicts */
+.theme-wide{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-bottom:1.2rem;
+  align-items:stretch}
+.theme-wide .rw-thumb{grid-column:span 1;overflow:hidden;border:1px solid var(--hair);
+  border-radius:var(--r);background:var(--surface);min-height:100%}
+.theme-wide .rw-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.theme-wide .rw-body{grid-column:span 2;display:flex;flex-direction:column;justify-content:center;
+  border:1px solid var(--hair);border-radius:var(--r);background:var(--surface);padding:1.4rem 1.6rem}
+.theme-wide .rw-body .tname{display:block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--sci-1);margin-bottom:.5rem}
+.theme-wide .rw-body p{font-size:.92rem;line-height:1.5;color:var(--text);margin:0}
+@media(max-width:760px){
+  .theme-wide{grid-template-columns:1fr}
+  .theme-wide .rw-thumb,.theme-wide .rw-body{grid-column:span 1}
+  .theme-wide .rw-thumb{aspect-ratio:16/10;min-height:0}
+}
 @media(max-width:760px){.themes{grid-template-columns:1fr}}
 .theme{border:1px solid var(--hair);border-radius:var(--r);background:var(--surface);
   overflow:hidden;display:flex;flex-direction:column;
